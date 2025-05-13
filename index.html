@@ -6,22 +6,75 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="static/style.css">
     <style>
-        .intro-emergia, .importancia, .fundamentos, .relacao {
+        .intro-emergia, .importancia, .fundamentos, .sustainability {
             margin-bottom: 30px;
         }
 
         .intro-emergia h2,
         .importancia h2,
-        .fundamentos h2,
-        .relacao h2 {
+        .sustainability h2 {
             font-size: 1.6rem;
             margin-bottom: 10px;
             color: #003366;
         }
 
-        .relacao ul {
+        .sustainability ul {
             list-style: disc;
             padding-left: 20px;
+        }
+        .fundamentos h2 {
+            align-items: center;
+            
+        }
+        /* Estilo para a área dos cards de fundamentos */
+        .row-cards-title {
+            
+            padding: 26px;
+            background-color: #003366;
+            color: white;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 1200px;
+        }
+        .row-cards {
+            display: flex; /* Usa flexbox para colocar os cards lado a lado */
+            flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo em telas menores */
+            gap: 20px; /* Espaço entre os cards */
+            justify-content: center; /* Centraliza os cards na linha */
+            margin-top: 20px; /* Espaço acima dos cards */
+            margin-bottom: 30px; /* Espaço abaixo dos cards */
+            padding: 0 20px; /* Adiciona um pouco de padding nas laterais em telas menores */
+        }
+
+        /* Estilo individual para cada card */
+        .row-cards .card {
+            background-color: #e9f5ff; /* Cor de fundo clara para o card */
+            border: 1px solid #b3d9ff; /* Borda suave */
+            border-radius: 8px; /* Cantos arredondados */
+            padding: 20px; /* Espaçamento interno */
+            flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis: Cresce, diminui e tem base de 300px */
+            max-width: 350px; /* Largura máxima para o card */
+            text-align: center; /* Centraliza o texto dentro do card */
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .row-cards .card h3 {
+            color: #004080; /* Cor do título do card */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+            font-size: 1.4rem;
+        }
+
+        .row-cards .card p {
+            font-size: 1rem;
+            line-height: 1.5; /* Espaçamento entre linhas para melhor leitura */
+            color: #555;
+        }
+
+        /* Exemplo de como adicionar um ícone básico dentro do card (você precisaria do HTML do ícone) */
+        .row-cards .card h3::before {
+            content: '⚙️ '; /* Exemplo de emoji como ícone, substitua por um ícone real */
+            margin-right: 8px;
         }
     </style>
 </head>
@@ -41,41 +94,56 @@
 
 
     <div class="container"">
-        <section class="importancia">
+        <section class="important">
             <h2>O que é Emergia?</h2>
             <p>
-            Emergia é um conceito desenvolvido pelo ecólogo norte-americano Howard T. Odum que representa a quantidade total de energia (geralmente solar) necessária, direta ou indiretamente, para produzir um bem, serviço ou recurso. Diferente da energia convencional, que mede apenas a quantidade, a emergia considera tanto a quantidade quanto a qualidade da energia utilizada nos processos de transformação. A unidade de medida da emergia é o joule emergético solar (seJ), que padroniza diferentes formas de energia em uma única unidade baseada na energia solar. Isso permite comparar e avaliar a eficiência energética de diversos sistemas, desde processos naturais até atividades humanas
-            </p>
-        </section>
-
-        <section class="fundamentos">
-            <h2>A base teórica da emergia está enraizada em três pilares principais:</h2>
-            <p>
-                1. Termodinâmica: A emergia utiliza princípios termodinâmicos para avaliar a energia envolvida em processos de transformação, considerando perdas e eficiência energética.
+                <strong>Emergia</strong> é um conceito desenvolvido pelo ecólogo norte-americano Howard T. Odum que representa a quantidade total de energia (geralmente solar) necessária, direta ou indiretamente, para produzir um bem, serviço ou recurso.
             </p>
             <p>
-                2. Teoria Geral dos Sistemas: Aplicada para entender e modelar sistemas complexos, permitindo a análise integrada de componentes naturais e humanos.   
+                Diferente da energia convencional, que mede apenas a quantidade, a emergia considera tanto a quantidade quanto a <em>qualidade</em> da energia utilizada nos processos de transformação. A unidade de medida da emergia é o <strong>joule emergético solar (seJ)</strong>, que padroniza diferentes formas de energia em uma única unidade baseada na energia solar. Isso permite comparar e avaliar a eficiência energética de diversos sistemas, desde processos naturais até atividades humanas.
             </p>
-            <p>
-                3. Ecologia de Sistemas: Foca na interação entre organismos e seu ambiente, essencial para compreender os fluxos de energia e matéria nos ecossistemas.
-            </p>
-            <p>
-                Odum introduziu o conceito de transformidade, que é a quantidade de emergia necessária para gerar uma unidade de energia útil. Por exemplo, a produção de eletricidade a partir de carvão possui uma transformidade diferente daquela gerada por energia solar, refletindo as diferenças na qualidade e no impacto ambiental de cada fonte.
-            </p>
-        </section>
-
-        <section class="relacao">
-            <h2>Relação entre Energia, Recursos Naturais e Sustentabilidade</h2>
-            <p>
-                A emergia oferece uma perspectiva abrangente sobre como a energia é utilizada na produção de bens e serviços, destacando a importância dos recursos naturais e seu papel na sustentabilidade.
-            </p>
-            <ul>
-                <li>Avaliação Ambiental: Ao considerar todas as formas de energia envolvidas, a emergia permite uma análise mais precisa do impacto ambiental de atividades humanas, promovendo práticas mais sustentáveis.</li>
-                <li>Gestão de Recursos Naturais: A emergia ajuda a identificar quais recursos são mais intensivos em energia para serem produzidos, orientando políticas de conservação e uso eficiente.</li>
-                <li>Desenvolvimento Sustentável: Integrando aspectos ecológicos e econômicos, a emergia serve como ferramenta para planejar e implementar estratégias de desenvolvimento que respeitem os limites ambientais.</li>
-            </ul
         </section>
     </div>
+        <section class="fundaments">
+            <center><div class="row-cards-title">
+                <h2 style="color: white;">A base teórica da emergia está enraizada em três pilares principais</h2>
+            </div></center>
+            <div class="row-cards">
+
+                <div class="card">
+                    <h3>1. Termodinâmica</h3>
+                    <p>A emergia utiliza princípios termodinâmicos para avaliar a energia envolvida em processos de transformação, considerando perdas e eficiência energética.</p>
+                </div>
+
+                <div class="card">
+                    <h3>2. Teoria Geral dos Sistemas</h3>
+                    <p>Aplicada para entender e modelar sistemas complexos, permitindo a análise integrada de componentes naturais e humanos.</p>
+                </div>
+
+                <div class="card">
+                    <h3>3. Ecologia de Sistemas</h3>
+                    <p>Foca na interação entre organismos e seu ambiente, essencial para compreender os fluxos de energia e matéria nos ecossistemas.</p>
+                </div>
+            </div> 
+
+           
+        </section>
+        <div class="container"> 
+            <p>
+                Odum introduziu o conceito de <strong>transformidade</strong>, que é a quantidade de emergia necessária para gerar uma unidade de energia útil. Por exemplo, a produção de eletricidade a partir de carvão possui uma transformidade diferente daquela gerada por energia solar, refletindo as diferenças na qualidade e no impacto ambiental de cada fonte.
+            </p>    
+            <section class="sustainability">
+                <h2>Relação entre Energia, Recursos Naturais e Sustentabilidade</h2>
+                <p>
+                    A emergia oferece uma perspectiva abrangente sobre como a energia é utilizada na produção de bens e serviços, destacando a importância dos recursos naturais e seu papel na sustentabilidade.
+                </p>
+                <ul>
+                    <li><strong>Avaliação Ambiental:</strong> Ao considerar todas as formas de energia envolvidas, a emergia permite uma análise mais precisa do impacto ambiental de atividades humanas, promovendo práticas mais sustentáveis.</li>
+                    <li><strong>Gestão de Recursos Naturais:</strong> A emergia ajuda a identificar quais recursos são mais intensivos em energia para serem produzidos, orientando políticas de conservação e uso eficiente.</li>
+                    <li><strong>Desenvolvimento Sustentável:</strong> Integrando aspectos ecológicos e econômicos, a emergia serve como ferramenta para planejar e implementar estratégias de desenvolvimento que respeitem os limites ambientais.</li>
+                </ul>
+            </section>
+        </div>
     
     <footer>
         © All rights reserved 2025 
