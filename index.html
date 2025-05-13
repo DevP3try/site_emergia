@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="static/style.css">
+    <style>
+        .intro-emergia, .importancia, .fundamentos, .relacao {
+            margin-bottom: 30px;
+        }
+
+        .intro-emergia h2,
+        .importancia h2,
+        .fundamentos h2,
+        .relacao h2 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+            color: #003366;
+        }
+
+        .relacao ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
      <header> <!-- Barra fixa de navegacao  entre as paginas -->
@@ -22,48 +41,42 @@
 
 
     <div class="container"">
-        <h1> O que eh emergia ? </h1><br>
-        A redução da disponibilidade de recursos fósseis e as consequências negativas,
-        como as mudanças climáticas, ao meio ambiente devido ao seu uso, fez com que
-        o termo sustentabilidade ganhasse atenção das indústrias, da comunidade científica
-        e da sociedade em geral. Nas empresas de tecnologia de informação e comunicação,
-        a sustentabilidade tem se concentrado nos data centers, que são os locais que
-        agrupam toda a infraestrutura de comunicação, energia, refrigeração e os
-        equipamentos físicos, como servidores e dispositivos de armazenamento.
-        Dentre os conceitos que podem ser aplicados a um data center, como a 
-        virtualização e a disposição dos equipamentos em corredores quentes e
-        frios, entre outros, a computação nas nuvens é apontada como uma alternativa
-        para a economia de recursos materiais e de energia por meio do
-        compartilhamento da infraestrutura entre os usuários. Essa tecnologia
-        tem sido rotulada como ‘verde’, pois diversos estudos apontam sua
-        eficiência energética, mas ignoram outros aspectos importantes
-        relacionados a um conceito mais amplo de ‘verde’. O objetivo desse
-        trabalho é realizar uma avaliação crítica do rótulo ‘verde’ como
-        atualmente utilizado para classificar computação nas nuvens,
-        focando em data center. Para isso, a contabilidade ambiental 
-        em emergia é utilizada como suporte metodológico, pois possui
-        uma escala de avaliação superior a uma simples razão de eficiência
-        energética. Essa metodologia contabiliza todos os esforços oriundos
-        do meio ambiente necessários para obtenção de um produto ou serviço.
-        Uma universidade brasileira foi considerada como estudo de caso. Duas 
-        infraestruturas de data centers foram comparadas: (i) a primeira composta 
-        por diversos data centers descentralizados e (ii) que utiliza os mais modernos 
-        conceitos de virtualização e computação nas nuvens. Os resultados indicam a computação 
-        nas nuvens como a tecnologia mais ‘verde’ comparada aos tradicionais data centers, pois 
-        ao analisar a ecoeficiência, a computação nas nuvens disponibiliza aos seus usuários 
-        máquinas virtuais (VM) e bytes a um custo ambiental menor (4,99E+15 seJ/VM vs. 9,07E+15seJ/VM; 0,34E+04 seJ/bytes vs.2,36E+04 seJ/bytes). 
-        Em relação à eficiência energética,
-        a nuvem consome ~37% menos energia elétrica.
+        <section class="importancia">
+            <h2>O que é Emergia?</h2>
+            <p>
+            Emergia é um conceito desenvolvido pelo ecólogo norte-americano Howard T. Odum que representa a quantidade total de energia (geralmente solar) necessária, direta ou indiretamente, para produzir um bem, serviço ou recurso. Diferente da energia convencional, que mede apenas a quantidade, a emergia considera tanto a quantidade quanto a qualidade da energia utilizada nos processos de transformação. A unidade de medida da emergia é o joule emergético solar (seJ), que padroniza diferentes formas de energia em uma única unidade baseada na energia solar. Isso permite comparar e avaliar a eficiência energética de diversos sistemas, desde processos naturais até atividades humanas
+            </p>
+        </section>
 
-        Resumo A análise emergética é uma abordagem de contabilidade ambiental que avalia a memória da exergia da geobiosfera 
-        (trabalho ambiental) que suporta sistemas econômicos, por exemplo, para tornar um produto ou serviço disponível através 
-        do uso de recursos naturais. Este artigo apresenta o software SCALE (Software para CÁLCULO DE EMERGIA baseado em inventários de ciclo de vida), que permite um cálculo rigoroso e replicável da emergia associada a qualquer produto ou serviço. O software explora um algoritmo ad hoc, cumprindo as regras da álgebra emergética, que requer como entrada a matriz que descreve um dado sistema de processos interconectados, contendo a quantidade de recursos naturais usados ​​pelo produto de saída e seus processos tecnológicos vinculados. A partir dessa matriz, o algoritmo realiza uma busca em grafos na rede correspondente e registra a emergia de saída associada a cada um dos caminhos explorados que ligam os nós de entrada da rede (ou seja, as fontes de emergia) aos nós de saída (ou seja, os produtos estudados). O algoritmo foi desenvolvido especificamente para ser usado com dados provenientes (em forma de matriz) de qualquer banco de dados de inventário de ciclo de vida (ICV) disponível, usado em estudos de avaliação de ciclo de vida (ACV). Dois estudos de caso são apresentados para ilustrar os recursos do software: o primeiro trata da geração de calor a partir de pellets de bagaço de uva, o segundo, da produção de água potável. O uso de grandes bancos de dados de ICV para cálculo de emergia usando o SCALE pode contribuir para estender a aplicação da avaliação de sistemas de emergia na prática da ciência da sustentabilidade. Até onde sabemos, esta é a primeira ferramenta de software que permite o cálculo exato da emergia de produtos usando bancos de dados de ICV e, portanto, alcança uma integração operacional entre a metodologia de ICV bem conhecida e padronizada e a avaliação de emergia. Destaques ► O SCALE permite um cálculo rigoroso da emergia de qualquer produto ou serviço. ► O algoritmo de cálculo de emergia foi lançado como OpenSource. ► O SCALE usa dados provenientes de qualquer banco de dados de inventário de ciclo de vida disponível. ► É o primeiro software que permite um cálculo exato de emergia. ► Permite uma integração operacional entre a avaliação do ciclo de vida e a emergia. Introdução A avaliação do ciclo de vida (ACV) é uma metodologia padronizada usada para quantificar os impactos ambientais de produtos ao longo de todo o seu ciclo de vida (ISO, 2006). Atualmente, a ACV é uma das ferramentas mais aceitas e utilizadas para a avaliação ambiental de produtos e serviços (Curran, 2006, Comissão Europeia, 2010). Como a maioria dos métodos de avaliação de impacto baseados no ciclo de vida e indicadores relacionados atualmente existentes, a ACV adota uma perspectiva antropocêntrica, uma vez que o valor dos recursos está relacionado à sua escassez ou à sua utilidade em sistemas de produção econômica.1 Portanto, do ponto de vista da ACV, os recursos a serem protegidos são aqueles solicitados pelas atividades de produção econômica (por meio de mecanismos de mercado) e cujos estoques são escassos. Recursos renováveis ​​e serviços ecossistêmicos são frequentemente excluídos da ACV, apesar do fato de seu apoio às atividades humanas e seu crescente esgotamento terem sido reconhecidos (Hassan et al., 2005). Apenas recentemente, alguns pesquisadores tentaram formalizar uma inclusão consistente de serviços ecossistêmicos na ACV (Zhang et al., 2010a, Zhang et al., 2010b), definindo uma abordagem de ACV com base ecológica (Eco-ACV). A partir do trabalho de Odum (1988) e Odum (1996), um novo paradigma para quantificar o valor dos recursos de um ponto de vista centrado na natureza (ou orientado para o doador) surgiu na comunidade científica. Essa abordagem baseia-se no conceito de emergia (escrito com "m"). Em sua definição tradicional, a emergia quantifica a quantidade de energia disponível (geralmente expressa como energia solar e medida em emjoules solares (sej), ou seus múltiplos) anteriormente necessária, direta e indiretamente, para gerar um produto e
+        <section class="fundamentos">
+            <h2>A base teórica da emergia está enraizada em três pilares principais:</h2>
+            <p>
+                1. Termodinâmica: A emergia utiliza princípios termodinâmicos para avaliar a energia envolvida em processos de transformação, considerando perdas e eficiência energética.
+            </p>
+            <p>
+                2. Teoria Geral dos Sistemas: Aplicada para entender e modelar sistemas complexos, permitindo a análise integrada de componentes naturais e humanos.   
+            </p>
+            <p>
+                3. Ecologia de Sistemas: Foca na interação entre organismos e seu ambiente, essencial para compreender os fluxos de energia e matéria nos ecossistemas.
+            </p>
+            <p>
+                Odum introduziu o conceito de transformidade, que é a quantidade de emergia necessária para gerar uma unidade de energia útil. Por exemplo, a produção de eletricidade a partir de carvão possui uma transformidade diferente daquela gerada por energia solar, refletindo as diferenças na qualidade e no impacto ambiental de cada fonte.
+            </p>
+        </section>
+
+        <section class="relacao">
+            <h2>Relação entre Energia, Recursos Naturais e Sustentabilidade</h2>
+            <p>
+                A emergia oferece uma perspectiva abrangente sobre como a energia é utilizada na produção de bens e serviços, destacando a importância dos recursos naturais e seu papel na sustentabilidade.
+            </p>
+            <ul>
+                <li>Avaliação Ambiental: Ao considerar todas as formas de energia envolvidas, a emergia permite uma análise mais precisa do impacto ambiental de atividades humanas, promovendo práticas mais sustentáveis.</li>
+                <li>Gestão de Recursos Naturais: A emergia ajuda a identificar quais recursos são mais intensivos em energia para serem produzidos, orientando políticas de conservação e uso eficiente.</li>
+                <li>Desenvolvimento Sustentável: Integrando aspectos ecológicos e econômicos, a emergia serve como ferramenta para planejar e implementar estratégias de desenvolvimento que respeitem os limites ambientais.</li>
+            </ul
+        </section>
     </div>
-
-
-
-
-
+    
     <footer>
         © All rights reserved 2025 
     </footer>
