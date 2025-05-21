@@ -26,7 +26,7 @@
             align-items: center;
             
         }
-        /* Estilo para a área dos cards de fundamentos */
+        
         .row-cards-title {
             
             padding: 26px;
@@ -38,48 +38,48 @@
             max-width: 1200px;
         }
         .row-cards {
-            display: flex; /* Usa flexbox para colocar os cards lado a lado */
-            flex-wrap: wrap; /* Permite que os cards quebrem para a linha de baixo em telas menores */
-            gap: 20px; /* Espaço entre os cards */
-            justify-content: center; /* Centraliza os cards na linha */
-            margin-top: 20px; /* Espaço acima dos cards */
-            margin-bottom: 30px; /* Espaço abaixo dos cards */
-            padding: 0 20px; /* Adiciona um pouco de padding nas laterais em telas menores */
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            justify-content: center; 
+            margin-top: 20px; 
+            margin-bottom: 30px; 
+            padding: 0 20px; 
         }
 
-        /* Estilo individual para cada card */
+       
         .row-cards .card {
-            background-color: #e9f5ff; /* Cor de fundo clara para o card */
-            border: 1px solid #b3d9ff; /* Borda suave */
-            border-radius: 8px; /* Cantos arredondados */
-            padding: 20px; /* Espaçamento interno */
-            flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis: Cresce, diminui e tem base de 300px */
-            max-width: 350px; /* Largura máxima para o card */
-            text-align: center; /* Centraliza o texto dentro do card */
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            background-color: #e9f5ff; 
+            border: 1px solid #b3d9ff; 
+            border-radius: 8px; 
+            padding: 20px; 
+            flex: 1 1 300px; 
+            max-width: 350px; 
+            text-align: center; 
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
         }
 
         .row-cards .card h3 {
-            color: #004080; /* Cor do título do card */
-            margin-bottom: 10px; /* Espaço abaixo do título */
+            color: #004080; 
+            margin-bottom: 10px;
             font-size: 1.4rem;
         }
 
         .row-cards .card p {
             font-size: 1rem;
-            line-height: 1.5; /* Espaçamento entre linhas para melhor leitura */
+            line-height: 1.5; 
             color: #555;
         }
 
-        /* Exemplo de como adicionar um ícone básico dentro do card (você precisaria do HTML do ícone) */
+      
         .row-cards .card h3::before {
-            content: '⚙️ '; /* Exemplo de emoji como ícone, substitua por um ícone real */
+            content: '⚙️ '; 
             margin-right: 8px;
         }
     </style>
 </head>
 <body>
-     <header> <!-- Barra fixa de navegacao  entre as paginas -->
+     <header> 
         <nav class="nav-bar">
             <div class="logo-area">
                 <div class="logo-container">
@@ -87,7 +87,11 @@
                 </div>
                 <span class="curso-titulo">Ciência da Computação</span>
             </div>
-
+            <div class="header-right">
+                <a class="active" href="index.html">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#about">APS</a>
+            </div>
             
         </nav>
     </header>
@@ -95,6 +99,7 @@
 
     <div class="container"">
         <section class="important">
+            
             <h2>O que é Emergia?</h2>
             <p>
                 <strong>Emergia</strong> é um conceito desenvolvido pelo ecólogo norte-americano Howard T. Odum que representa a quantidade total de energia (geralmente solar) necessária, direta ou indiretamente, para produzir um bem, serviço ou recurso.
