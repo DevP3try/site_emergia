@@ -5,27 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursos Visuais e Multimídia</title>
     <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js"></script>
     <style>
 
     </style>
 </head>
 <body>
+    <!-- Cabecalho -->
      <header> 
         <nav class="nav-bar">
             <div class="logo-area">
-                <div class="logo-container">
-                    <img src="static/Novo_Logo_UNIP.png" alt="Logo UNIP" class="logo-unip">
-                </div>
+                <div class="logo-container"><a href="https://www.unip.br/" target="_blank"><img src="static/Novo_Logo_UNIP.png" alt="Logo UNIP" class="logo-unip"></a></div>
                 <span class="curso-titulo">Ciência da Computação</span>
             </div>
             <div class="header-right">
                 <a class="active" href="index.html">Home</a>
                 <a href="#about">Sobre</a>
-                <a href="#about">APS</a>
+                <a href="#APS">APS</a>
+                <div class="menu-icon" onclick="menuIco(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
-            
         </nav>
     </header>
+
+    
+        <!-- Navegacao lateral-->
+    <div id="sideNav" class="sidenav">
+        <a href="index.html" onclick="openNav()">Pagina inicial</a>
+        <a href="emergianapratica.html" onclick="openNav()">Emergia na Prática</a>
+        <a href="rec_mult.html" onclick="openNav()">Diagramas</a>
+        <a href="emergianaunip.html" onclick="openNav()">Emergia na UNIP Paraíso</a>
+    </div>
+
 
 
     <div class="container"">
