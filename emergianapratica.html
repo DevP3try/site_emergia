@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js"></script>
     <title>Emergia na Prática</title>
-<script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=oFVah-JRTJjTJGK2ZY4mGrLOueysTIvY-S9Li7y1DWhmCmkcYxsRGsp5aTZojPcrsi5wdhVbO4tJY34L8D3ZxerA7897SlsVL6P2QE2-i6XlO7CTeCLG5_5HF0WaQaC0PjKOr6oR1oV-Cunxu8s0KEA5JN4Xdi3b6LFtuUT1HE5khTEbSZNiOv3ZOQDyl-E7gEmd0m8bvV80lPWLDNjeufZ_yKSqchwg2ywFz_irXeg" charset="UTF-8"></script></head>
+</head>
 <body>
-    <header> <!-- Barra fixa de navegacao entre as paginas -->
+    <!-- Cabecalho -->
+     <header> 
         <nav class="nav-bar">
             <div class="logo-area">
-                <div class="logo-container">
-                    <img src=".../static/Novo_Logo_UNIP.png" alt="Logo UNIP" class="logo-unip">
-                </div>
+                <div class="logo-container"><img src="static/Novo_Logo_UNIP.png" alt="Logo UNIP" class="logo-unip"></div>
                 <span class="curso-titulo">Ciência da Computação</span>
+            </div>
+            <div class="header-right">
+                <a class="active" href="index.html">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#APS">APS</a>
+                <div class="menu-icon" onclick="menuIco(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
         </nav>
     </header>
+
+        <!-- Navegacao lateral-->
+    <div id="sideNav" class="sidenav">
+        <a href="#sobre" onclick="openNav()">Sobre</a>
+        <a href="emergianapratica.html" onclick="openNav()">Emergia na Prática</a>
+        <a href="rec_mult.html" onclick="openNav()">Diagramas</a>
+        <a href="emergianaunip.html" onclick="openNav()">Emergia na UNIP Paraíso</a>
+    </div>
+
+
 
         <div class="container">
        <h2>Emergia na prática</h2>
