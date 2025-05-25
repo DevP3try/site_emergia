@@ -173,13 +173,18 @@ footer {
     border-top: 4px solid #ffcc00;
 }
 
-div.CardAbt {
+.CardAbt div{
 color: black;
 margin: 10px;
 box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.29);
 border-radius: 10px;
 justify-content: flex;
-display:inline-block;
+display:flex;
+align-items: center;
+}
+
+.CardAbt img {
+
 }
 
 div.Roger {
@@ -189,10 +194,6 @@ margin: 5px;
 
 div.CardAbt:hover {
     transform: translate(5px, 5px);
-}
-
-div.image {
-  float: left;
 }
 
 
