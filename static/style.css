@@ -196,7 +196,7 @@ footer .logo-unip {
 }
 footer .logo-container {
   width: 10%;
-
+}
 div.CardAbt {
 color: black;
 margin: 10px;
@@ -206,21 +206,21 @@ justify-content: flex;
 display:inline-block;
 }
 
-div.Roger {
+div .Roger {
 display:block;
 margin: 5px;
 }
 
-div.CardAbt:hover {
+div .CardAbt:hover {
     transform: translate(5px, 5px);
 }
 
-div.image {
+div .image {
   float: left;
 }
 
 
-section.row {
+section .row {
   justify-content: center;
   display: flex;
 }
