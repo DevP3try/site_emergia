@@ -225,12 +225,21 @@ margin: 10px;
   margin: 4px;
 }
 
-div.CardAbt:hover {
+div .Roger {
+display:block;
+margin: 5px;
+}
+
+div .CardAbt:hover {
     transform: translate(5px, 5px);
 }
 
+div .image {
+  float: left;
+}
 
-section.row {
+
+section .row {
   justify-content: center;
   display: flex;
 }
