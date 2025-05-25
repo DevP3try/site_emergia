@@ -208,6 +208,8 @@ border-radius: 10px;
 justify-content: flex;
 display: flex;
 width: 500px;
+margin-left: 25px;
+margin-right: 25px;
 }
 
 .CardAbt img {
@@ -221,25 +223,12 @@ object-fit: cover;
 margin: 10px;
 }
 
-.CardAbt p{
-  margin: 4px;
-}
-
-div .Roger {
-display:block;
-margin: 5px;
-}
-
-div .CardAbt:hover {
+.CardAbt:hover {
     transform: translate(5px, 5px);
 }
 
-div .image {
-  float: left;
-}
-
-
-section .row {
-  justify-content: center;
+section.row {
+  align-items: center;
   display: flex;
+  gap: 25px;
 }
