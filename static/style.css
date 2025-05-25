@@ -196,6 +196,9 @@ footer .logo-unip {
 }
 footer .logo-container {
   width: 10%;
+}
+
+/*----------AboutCards Estilo----------*/
 
 .CardAbt div{
 color: black;
@@ -203,17 +206,23 @@ margin: 10px;
 box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.29);
 border-radius: 10px;
 justify-content: flex;
-display:flex;
-align-items: center;
+display: flex;
+width: 500px;
 }
 
 .CardAbt img {
-
+flex-shrink: 0;
+border-radius: 8px; 
+float: left;
+object-fit: cover;
 }
 
-div.Roger {
-display:block;
-margin: 5px;
+.APS {
+margin: 10px;
+}
+
+.CardAbt p{
+  margin: 4px;
 }
 
 div.CardAbt:hover {
