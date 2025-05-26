@@ -32,9 +32,8 @@ Inclui ainda:
 
 - HTML5
 - CSS3
-- JavaScript (básico, se aplicável)
-- Tailwind CSS (opcional, se você utilizou)
-- Ferramentas de edição de imagem (Canva, Figma, etc.)
+- JavaScript
+- Ferramentas de edição de imagem (Canva)
 - [YouTube Audio Library](https://www.youtube.com/audiolibrary/) para música de fundo (no vídeo)
 - Editor de código: VS Code
 
@@ -53,29 +52,17 @@ Além do site, o projeto inclui:
 
 ## 👥 Equipe
 
-- Nome 1 – RA: XXXXXXX  
-- Nome 2 – RA: XXXXXXX  
-- Nome 3 – RA: XXXXXXX  
-- Nome 4 – RA: XXXXXXX  
-- Nome 5 – RA: XXXXXXX  
+- R829952 - ANDERSON KAUA OLIVERA PETRY (líder)
+- H7690B2 - WILLIAN MARTINS GOMES CORREIA 
+- R864JH0 - ROGER ROCHA LOPES 
+- H7147H3 - JOAO VICTOR DA SILVA SANTANA 
+- R832GD6 - DENILSON ALVES DOS SANTOS 
+- R855210 - FELIPE DOS ANJOS FRANCISCO  
 
 **Curso:** Ciência da Computação  
 **Semestre:** 1º Semestre (2025)  
 **Disciplina:** Programação Web Responsiva (PWR)  
-**Orientador(a):** Prof(a). Nome do professor
-
----
-
-## 📄 Licença
-
-Este projeto é acadêmico, sem fins lucrativos.  
-Distribuído sob a licença Creative Commons – CC BY-NC-SA 4.0.
-
----
-
-## 🙌 Agradecimentos
-
-Agradecemos aos professores e à equipe da UNIP pelo suporte, e à comunidade científica que tem desenvolvido estudos sobre emergia e sustentabilidade, especialmente Odum (1996), Di Salvo (2015), Ulgiati e Brown.
+**Orientador(a):** Prof(a). Veras
 
 ---
 
